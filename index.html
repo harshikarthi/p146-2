@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Female Robot</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <!-- Robot Body -->
+    <a-cylinder position="0 1 -5" radius="0.7" height="1.5" color="#ffccff"></a-cylinder>
+    
+    <!-- Robot Head -->
+    <a-sphere position="0 2.2 -5" radius="0.6" color="#ffccff"></a-sphere>
+
+    <!-- Robot Eyes -->
+    <a-sphere position="-0.3 2.3 -4.6" radius="0.05" color="#0000ff" animation="property: rotation; to: 0 360 0; loop: true; dur: 1000"></a-sphere>
+    <a-sphere position="0.3 2.3 -4.6" radius="0.05" color="#0000ff" animation="property: rotation; to: 0 360 0; loop: true; dur: 1000"></a-sphere>
+
+    <!-- Robot Antennas -->
+    <a-cylinder position="0 2.8 -5" radius="0.02" height="0.6" color="#ff99cc" animation="property: position; dir: alternate; dur: 2000; to: 0 3.2 -5; loop: true;"></a-cylinder>
+    <a-cone position="0 3.4 -5" radius-bottom="0.05" radius-top="0.02" height="0.4" color="#ff99cc" animation="property: position; dir: alternate; dur: 2000; to: 0 3.8 -5; loop: true;"></a-cone>
+
+    <!-- Robot Legs -->
+    <a-cylinder position="-0.3 0.3 -5" radius="0.15" height="1" color="#ff66ff"></a-cylinder>
+    <a-cylinder position="0.3 0.3 -5" radius="0.15" height="1" color="#ff66ff"></a-cylinder>
+
+    <!-- Robot Lips -->
+    <a-cylinder position="0 1.8 -4.65" rotation="90 0 0" radius="0.08" height="0.15" color="#ff0066"></a-cylinder>
+
+    <!-- Robot Hands -->
+    <a-sphere position="-0.8 1.7 -5" radius="0.2" color="#ffccff"></a-sphere>
+    <a-sphere position="0.8 1.7 -5" radius="0.2" color="#ffccff"></a-sphere>
+  </a-scene>
+</body>
+</html>
